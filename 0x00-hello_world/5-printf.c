@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
- * main - print a c program using printf
+ * main - Entry point
  *
- * Return 0
+ * Return: always 0
  */
 int main(void)
 {
