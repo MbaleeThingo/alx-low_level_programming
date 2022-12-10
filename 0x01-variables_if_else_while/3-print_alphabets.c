@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - Prints the alphabet
+ * main - Prints the alphabe
  *
  * Return: Always 0 (success)
  */
@@ -14,6 +14,6 @@ for (i = 0; i < 52; i++)
 {
 putchar(alp[i]);
 }
-purchar('\n');
+putchar('\n');
 return (0);
 }
