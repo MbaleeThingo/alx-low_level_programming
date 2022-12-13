@@ -3,9 +3,8 @@
 /**
  * print_last_digit - prints the last digit
  * @n: the number
- * Return: value of last digit
+ * Return: the last digit
  */
-
 int print_last_digit(int n)
 {
 int x;
