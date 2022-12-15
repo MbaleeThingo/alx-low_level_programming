@@ -1,7 +1,4 @@
 #include <stdio.h>
-#include "main.h"
-
-
 
 /**
  * main - a program that prints the numbers from 1 to 100,
@@ -16,7 +13,7 @@ int main(void)
 {
 int a = 1;
 
-for (; a < 100; a++)
+for (a < 100; a++)
 {
 if (a % 3 == 0 && a % 5 == 0)
 printf("FizzBuzz ");
