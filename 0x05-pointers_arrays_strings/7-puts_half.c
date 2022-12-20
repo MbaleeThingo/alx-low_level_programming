@@ -18,6 +18,6 @@ c = a / 2;
 else
 c = (a + 1) / 2;
 for (b = c; b < a; b++)
-_putchar(str[b])
+_putchar(str[b]);
 _putchar('\n');
 }
