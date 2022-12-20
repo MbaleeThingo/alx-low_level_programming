@@ -9,15 +9,21 @@
 
 void puts_half(char *str)
 {
-int a, b, c;
+int index, half;
 
-while (str[a] != '\0')
-a++;
-if (a % 2 == 0)
-c = a / 2;
-else
-c = (a + 1) / 2;
-for (b = c; b < a; b++)
-_putchar(str[b]);
+index = 0;
+while (str[index] != '\0')
+index++;
+
+half = index / 2;
+
+if (index % 2 == 1)
+half++;
+
+while (half < index)
+{
+_putchar(str[half]);
+half++;
+}
 _putchar('\n');
 }
