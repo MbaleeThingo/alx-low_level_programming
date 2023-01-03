@@ -18,7 +18,8 @@ while (*(haystack + i))
 if (*(haystack + i) == *(needle + j))
 {
 j++;
-if (*(needle + j) == '\0')														return ((haystack + i) - (j - 1));
+if (*(needle + j) == '\0')
+return ((haystack + i) - (j - 1));
 }
 else
 j = 0;
