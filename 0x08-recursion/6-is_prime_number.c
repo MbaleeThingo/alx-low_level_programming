@@ -1,18 +1,53 @@
 #include "main.h"
 
-int is_divisible(int num, int div);
-int is_prime_number(int n);
-
 /**
-* is_divisible - checks if no is divisible
-* @num: the no to be checked
-* @div: the divisor
-* Return: 0 if the no is divisible
-* 1 if the no is not divisible
+* evaluate_num - recursion loop
+* @num: num
+* @iterator: number to iterate
+* Return: 1 or 0
 */
 
-int is_divisible(int num, int div)
+int evaluate_num(int num, int iterator)
 {
-if (num % div == 0)
+if (iterator == num - 1)
+{
+return (1);
+}
+
+else if (num % iterator == 0)
+{
 return (0);
+}
+
+if (num % iterator != 0)
+{
+return (evaluate_num(num, iterator + 1));
+}
+
+{
+return (0);
+}
+
+/**
+ * is_prime_number - evaluate prime or not
+ * @num: number
+ * Return: return 1 prime - return 0 otherwise
+ */
+
+int is_prime_number(int num)
+{
+int iterator;
+iterator = 2;
+
+/* only greater than 2*/
+if (num < 2)
+{
+return (0);
+}
+
+if (num == 2)
+{
+return (1);
+}
+return (evaluate_num(num, iterator));
 }
