@@ -27,10 +27,10 @@ return (len);
 
 /**
  * create_xarray - Creates an array of chars and initializes it with
- * 	the character 'x'. Adds a terminating null byte.
+ * the character 'x'. Adds a terminating null byte.
  * @size: The size of the array to be initialized.
  * Description: If there is insufficient space, the
- * 	function exits with a status of 98.
+ * function exits with a status of 98.
  * Return: A pointer to the array.
  */
 
@@ -54,7 +54,7 @@ return (array);
 
 /**
  * iterate_zeroes - Iterates through a string of numbers containing
- * 	leading zeroes until it hits a non-zero number.
+ * leading zeroes until it hits a non-zero number.
  * @str: The string of numbers to be iterate through.
  * Return: A pointer to the next non-zero element.
  */
@@ -71,7 +71,7 @@ return (str);
  * get_digit - Converts a digit character to a corresponding int.
  * @c: The character to be converted.
  * Description: If c is a non-digit, the function
- * 	exits with a status of 98.
+ * exits with a status of 98.
  * Return: The converted int.
  */
 
@@ -94,7 +94,7 @@ return (digit);
  * @digit: The single digit.
  * @zeroes: The necessary number of leading zeroes.
  * Description: If mult contains a non-digit, the function
- * 	exits with a status value of 98.
+ * exits with a status value of 98.
  */
 
 void get_prod(char *prod, char *mult, int digit, int zeroes)
@@ -178,7 +178,7 @@ if (tens)
  * @argv: The number of arguments passed to the program.
  * @argc: An array of pointers to the arguments.
  * Description: If the number of arguments is incorrect or one number
- * 	contains non-digits, the function exits with a status of 98.
+ * contains non-digits, the function exits with a status of 98.
  * Return: Always 0.
  */
 
